@@ -46,7 +46,6 @@ func GetPersonEndPoint(w http.ResponseWriter, req *http.Request) {
 			return
 		}
 	}
-
 	json.NewEncoder(w).Encode(Person{})
 }
 func DeletePeopleEndPoint(w http.ResponseWriter, req *http.Request) {
@@ -59,7 +58,6 @@ func DeletePeopleEndPoint(w http.ResponseWriter, req *http.Request) {
 			break
 		}
 	}
-
 	json.NewEncoder(w).Encode(people)
 }
 
